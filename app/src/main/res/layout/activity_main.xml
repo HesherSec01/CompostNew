@@ -1,71 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#202732"
-    tools:context=".MainActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#202732"
+tools:context=".MainActivity">
 
-    <LinearLayout
+<LinearLayout
 
 
-        android:layout_width="324dp"
-        android:layout_height="540dp"
+    android:layout_width="333dp"
+    android:layout_height="589dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginBottom="70dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginBottom="72dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:srcCompat="@drawable/log2" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            app:srcCompat="@drawable/log2" />
+    <Button
+        android:id="@+id/btn_descarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="Descargar complemento"
+        android:textColor="#FFFFFF" />
 
-        <Button
-            android:id="@+id/btn_compost"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/button_rounded"
-            android:text="Composteros"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btn_tipos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20px"
-            android:background="@drawable/button_rounded_border"
-            android:text="Tipos de mapas"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btn_ubicacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20px"
-            android:background="@drawable/button_rounded"
-            android:text="Mi ubicación"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btn_monitoreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20px"
-            android:background="@drawable/button_rounded_border"
-            android:text="Monitoreo de Compost"
-            android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/btn_compost"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounded"
+        android:text="Compostadores"
+        android:textColor="#FFFFFF" />
 
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_monitoreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="Monitoreo de Compostadores"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

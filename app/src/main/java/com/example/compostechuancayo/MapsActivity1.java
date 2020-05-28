@@ -40,8 +40,10 @@ public class MapsActivity1 extends FragmentActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng Huancayo = new LatLng(-12.0537954, -75.2300214);
-        mMap.addMarker(new MarkerOptions().position(Huancayo).title("Compostero Huancayo").snippet("Compostero huancayo realizado por la facultad de arquitectura Continental"));
+        LatLng Huancayo = new LatLng(-12.0473868, -75.2001774);
+        mMap.addMarker(new MarkerOptions().position(Huancayo).title("Universidad Continental").snippet("Compostero Huancayo por la facultad de arquitectura Continental"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Huancayo,15));
+
+
     }
 }
